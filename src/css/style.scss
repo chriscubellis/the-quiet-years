@@ -47,6 +47,9 @@ body {
   font-style: normal;
   line-height: 36px;
   overflow-x: hidden;
+  @include mobile {
+    padding: 0;
+  }
 }
 
 main {
@@ -57,6 +60,7 @@ main {
   align-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
+
   &::after {
     content: ""; // qr corner
     width: 75px;
@@ -66,6 +70,9 @@ main {
     top: 50px;
     background: url("../media/qr.svg") no-repeat;
     background-size: contain;
+    @include mobile {
+      display: none;
+    }
   }
   section {
     box-sizing: border-box;
@@ -157,6 +164,9 @@ main {
           &.wide {
             width: 3000px;
             height: auto;
+            @include mobile {
+              width: 400%;
+            }
           }
           .plyr {
             //pointer-events: none;
@@ -166,6 +176,11 @@ main {
             height: 350px;
             margin-right: 25px;
           }
+          @include mobile {
+            width: 80%;
+            height: auto;
+            margin-right: 5px;
+          }
         }
       }
 
@@ -173,6 +188,25 @@ main {
         li {
           width: 3000px;
         }
+      }
+    }
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+
+    section,
+    section#left,
+    section#right {
+      width: 100vw;
+      max-width: 100vw;
+      padding: 10px 10px;
+      #carousel,
+      #standalone {
+        width: calc(100% + 10px);
+      }
+      p {
+        padding: 0px 10px;
       }
     }
   }
