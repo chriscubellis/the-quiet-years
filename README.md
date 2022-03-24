@@ -1,6 +1,8 @@
-# Parcel Boilerplate
+# The Quiet Years
 
-Built off of [Parcel Boilerplate](https://github.com/finmavis/parcel-boilerplate.git)
+Personal project, placeholder page for now. 
+- [Visit Site](https://quiet.c-c.ooo/)
+
 
 ## Table of Contents
 
@@ -9,6 +11,12 @@ Built off of [Parcel Boilerplate](https://github.com/finmavis/parcel-boilerplate
 
 ## TL;DR
 
-- yarn init
-- yarn start
-- yarn build
+- Init `yarn`
+- Run `yarn start`
+- Build `yarn build`
+
+## Built With
+
+- [Parcel Boilerplate](https://github.com/finmavis/parcel-boilerplate.git)
+- [Plyr](https://plyr.io/)
+- [Vercel](https://vercel.com)
